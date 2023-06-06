@@ -10,8 +10,8 @@ body{
 font-family: 'Urbanist', sans-serif;
 }
 .logo-container {
-  width: 150px; /* Adjust the width as desired */
-  height: auto; /* This ensures the height scales proportionally */
+  width: 150px; 
+  height: auto; 
 }
 nav ul {
 list-style: none;
