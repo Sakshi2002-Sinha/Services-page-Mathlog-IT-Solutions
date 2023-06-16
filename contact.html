@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Service page</title>
+  <title>Contact page</title>
   <link rel="stylesheet" href="contact.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -14,43 +14,46 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Sans&family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+ <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
   <body>
-      <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light " data-bs-theme="light">
-        <div class="container-fluid">
-
-          <div style="margin-left:60px;" class="d-flex">
+<!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container" style="margin-left:100px;">
+          <div class="d-flex align-items-center">
             <img class="img-fluid" src="images/Logo without BG.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-
             <div class="logo-container">
                <img src="images/logo with no bg 2.png" alt="Logo" width="100%" height="auto">
             </div>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left:300px;">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Services</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                <a class="nav-link" href="index.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
-
-              <button style="background-color:#F97C45; text-decoration: none; color: white; border: none;" type="button" class="btn btn-warning"><a href="contact.html" style="color: inherit; text-decoration: none;">Contact Us</a></button>
+              <li class="nav-item">
+                <button style="background-color:#F97C45; text-decoration: none; color:black; border: none;" type="button" class="btn btn-primary"><a href="contact.html" style="color: inherit; text-decoration: none;">Contact Us</a></button>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+<!-- navbar end -->
+
   <div class="contact-container">
     <div class="contact-content">
       <h5 style="color: #333;">We're here to help.</h5>
@@ -60,7 +63,7 @@
   <div class="container">
     <div class="box">
       <h5 class="contact-info">
-       <span class="underline"><i class="fi fi-rr-phone-flip icon"></i> Contact Number</span>
+       <span class="underline"><i class="fi fi-rr-phone-call icon"></i> Contact Number</span>
      </h5>
      <p>Call <b> +91 xxx 38398</b> to speak to a <br> support representative now</p>
     </div>
@@ -74,46 +77,52 @@
     </div>
   </div>
 <!-- footr -->
-<div style=" margin-left: 50px;" class="container-fluid mt-5">
-<div class="row mb-4">
-  <div class="col-md-4 col-sm-4 col-xs-4">
-    <div class="footer-text pull-left">
-      <div class="d-flex">
-        <img class="img-fluid" src="images/Logo without BG.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
 
-        <div class="logo-container">
-           <img src="images/logo with no bg 2.png" alt="Logo" width="100%" height="auto">
+<div style="margin-left: 50px;" class="container-fluid mt-5">
+  <div class="row mb-4">
+    <div class="col-md-4 col-sm-4 col-xs-4">
+      <div class="footer-text pull-left">
+        <div class="d-flex">
+          <img class="img-fluid" src="images/Logo without BG.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+
+          <div class="logo-container">
+            <img src="images/logo with no bg 2.png" alt="Logo" width="100%" height="auto">
+          </div>
         </div>
+        <p class="card-text"><b>Address:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+        <p class="card-text"><b>Email:</b> info@mathlog.co.in</p>
+        <p class="card-text"><b>Phone No.:</b> +91 76506 XXXXX</p>
       </div>
-      <p class="card-text"><b>Address: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-      <p class="card-text"><b>Email:</b> info@mathlog.co.in</p>
-      <p class="card-text"><b>Phone No.:</b> +91 76506 XXXXX</p>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2"></div>
+    <div class="col-md-2 col-sm-2 col-xs-2">
+      <ul>
+        <li><a class="footer-link" href="index.html">Home</a></li>
+        <li><a class="footer-link" href="blogs.html">Blogs</a></li>
+        <li><a class="footer-link" href="index.html">Services</a></li>
+        <li><a class="footer-link" href="about.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2">
+      <img src="images/Map.png" alt="Logo" width="100%" height="auto">
     </div>
   </div>
-  <div class="col-md-2 col-sm-2 col-xs-2">
-    <ul>
-      <li>Home</li>
-      <li>Blogs</li>
-      <li>Services</li>
-      <li>About Us</li>
-    </ul>
-  </div>
-  <div style="margin-left:200px;" class="col-md-2 col-sm-2 col-xs-2"><img src="images/Map.png" alt="Logo" width="100%" height="auto"></div>
-</div>
 </div>
 <div class="container-fluid mt-5">
-<div style="color:#000000;" class="divider mb-4"> </div>
+  <div style="color:#000000" class="divider mb-4"></div>
 </div>
-<div class="row" style="font-size:10px;">
-<div class="col-md-6 col-sm-6 col-xs-6">
-  <div style=" margin-left: 50px;"class="pull-left">
-    <p>Copyright <i class="fi fi-rr-copyright"></i> 2023 MATHLOG IT SOLUTIONS PRIVATE LIMITED</p>
+<div class="row" style="font-size: 10px;">
+  <div class="col-md-6 col-sm-6 col-6">
+    <div class="d-flex align-items-center">
+      <div style="margin-left: 20px;">
+        <p>&copy; 2023 MATHLOG IT SOLUTIONS PRIVATE LIMITED</p>
+      </div>
+    </div>
   </div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-6">
-  <div style=" margin-left: 500px;" class="pull-right mr-4 d-flex policy">
-    <div>Privacy Policy</div>
+  <div class="col-md-6 col-sm-6 col-6">
+    <div class="pull-right d-flex policy justify-content-end">
+      <div style="margin-left: 20px;">Privacy Policy</div>
+    </div>
   </div>
-</div>
 </div>
 </html>
