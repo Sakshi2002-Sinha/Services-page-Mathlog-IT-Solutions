@@ -7,28 +7,63 @@ font-family: 'Urbanist', sans-serif;
 }
 body{
   font-family: 'Noto Sans', sans-serif;
-font-family: 'Urbanist', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  background-color: #f3f6fd;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(189, 196, 203);
+  overflow-x: hidden;
 }
 .logo-container {
-  width: 150px; 
-  height: auto; 
+  width: 150px;
+  height: auto;
 }
-nav ul {
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
+/* test nav */
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  background-color: #f3f6fd;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(189, 196, 203);
+  overflow-x: hidden; /* Add this line to hide horizontal scrollbar */
+  padding-top: 5px;
+  /* padding-bottom: 12px; */
+
 }
 
-nav ul li {
-margin-right: 20px;
+.navbar {
+  background-color: white; /* Set the background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  margin-bottom: 20px; /* Add space below the navbar */
+
 }
 
-nav ul li a {
-text-decoration: none;
-position: relative;
-color: #000;
-transition: border-bottom-width 0.3s;
+.navbar-brand {
+  margin-left: 60px;
+}
+
+.navbar-nav {
+   margin-right: auto /* Add margin to align items to the right */
+   margin-left: auto;
+ }
+
+.navbar-nav .nav-link {
+  color: #000; /* Set the link color */
+  margin-right: 10px; /* Add spacing between nav items */
+  transition: color 0.3s; /* Add transition effect */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.navbar-toggler {
+  border: none; /* Remove the border */
+}
+
+.btn-primary {
+  background-color: #f97c45; /* Set the button color */
+  border-color: #f97c45; /* Set the button border color */
+  padding: 8px 30px;
 }
 
 nav ul li a::after {
@@ -44,13 +79,6 @@ transition: border-bottom-color 0.3s;
 nav ul li a:hover::after {
 border-bottom-color: #f97c45;
 }
-.navbar-brand{
-    font-family: 'Lora', serif;
-  padding-top:0;
-  width: 80px;
-  height:50px;
-  padding-top: 10px;
-}
 .navbar-nav li a{
   font-size: 14px;
   font-weight: 600;
@@ -59,82 +87,97 @@ border-bottom-color: #f97c45;
   position: relative;
 
 }
-.section-title p{
-font-family: sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 20px;
-letter-spacing: 0.08em;
-}
+/* end navbar */
+/* start talk */
 .letstalk_section {
-  padding: 45px;
-  padding-bottom: 45px;
-  text-align: left;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(pexels-kindel-media-7688336.jpg);
-  background-size: 100% 100%;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    padding: 45px;
+    padding-bottom: 45px;
+    text-align: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/pexels-kindel-media-7688336.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -20px;
+    padding-top: 45px;
+  }
+
+  .letstalk_section h3 {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .letstalk_section button {
+    color: #ffffff;
+    border-color: #ffffff;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .letstalk_section {
+      padding: 20px;
+      margin-top: 0;
+    }
 
     .letstalk_section h3 {
-      color: #ffffff;
-      font-size: 28px;
-      line-height: 1.5;
-      margin-bottom: 20px;
+      font-size: 24px;
     }
 
     .letstalk_section button {
-
-      color: #ffffff;
-      border-color: #ffffff;
-      padding: 10px 30px;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 30px;
+      padding: 8px 20px;
+      font-size: 16px;
     }
+  }
+  /* end talk */
 
-.heading4 h3 {
-  margin-top: 50px;
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  font-size: 2em;
-  letter-spacing: 2px;
-  font-weight: 100;
+.services {
+  margin: 20px;
 }
 
-.heading4 h3:after {
-  -webkit-flex: 3;
-  -flex:3;
-  display: inline-block;
-  content: "";
-  height: 1px;
-  background: #999;
-  margin: auto 0 auto 20px;
-}
-
-.services{
-  margin: 20px 20px 20px 20px;
-}
-.section-title{
+.section-title {
   padding: 1em;
 }
-.section-title p{
-   font-family: 'Urbanist', sans-serif;
 
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 20px;
-/* or 164% */
-
-letter-spacing: 0.08em;
-
-color: #000000;
+.section-title p {
+  font-family: 'Urbanist', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #000000;
 }
-/* test */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .letstalk_section {
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .letstalk_section h3 {
+    font-size: 24px;
+  }
+
+  .letstalk_section button {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  .services {
+    margin: 10px;
+  }
+
+  .section-title p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
 
 .card {
   border: none;
@@ -196,14 +239,6 @@ color: #000000;
     max-width: 200px; /* Adjust the maximum width as needed */
     height: auto;
   }
-
-  body {
-    background-color: #f3f6fd;
-    font-size: 13px;
-    font-weight: bold;
-    color: rgb(189, 196, 203);
-  }
-
   ul {
     list-style-type: none;
     margin: 0;
@@ -243,7 +278,7 @@ color: #000000;
   }
 
   .heading {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     color: black;
   }
 
@@ -252,21 +287,20 @@ color: #000000;
   }
 
   /* Footer */
-  
+
   .footer {
     background: linear-gradient(0deg, #000000, #000000), linear-gradient(0deg, #F97C45, #F97C45);
     color: #fff;
     padding: 40px 0;
   }
 
-    .logo-container {
-      width: 150px; /* Adjust the width as desired */
-      height: auto; /* This ensures the height scales proportionally */
-    }
+  .logo-container {
+    width: 150px; /* Adjust the width as desired */
+    height: auto; /* This ensures the height scales proportionally */
+  }
 
   .footer h4 {
     font-size: 18px;
-
   }
 
   .footer p {
@@ -300,4 +334,30 @@ color: #000000;
   .footer-bottom a {
     color: #fff;
     text-decoration: underline;
+  }
+ .footer-link{
+   text-decoration: none;
+   color: black;
+ }
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 30px 0;
+    }
+
+    .footer h4 {
+      font-size: 16px;
+    }
+
+    .footer p {
+      font-size: 12px;
+    }
+
+    .footer ul li {
+      margin-bottom: 5px;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+    }
   }
